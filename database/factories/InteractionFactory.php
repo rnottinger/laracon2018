@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Interaction::class, function (Faker $faker) {
     $date = $faker->dateTimeThisDecade;
-
+// date('Y-m-d H:i:s');
     return [
         'type' => $faker->randomElement([
             'Phone',
